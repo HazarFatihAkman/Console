@@ -5,13 +5,44 @@ using ConsoleApp1.Models;
 
 IKPSPublicSoapClientService clientService = new KPSPublicSoapClientService();
 var person = new Person();
-person.Id = 0000;
-person.FirstName = "Hazar Fatih";
-person.LastName = "Akman";
-person.Birthday = 2000;
 
-var test1 = clientService.CheckPerson(person);
+Console.WriteLine("Tc Kimlik Numarası Giriniz : ");
+var idStr = Console.ReadLine();
+while (idStr.Length == 0)
+{
+    Console.WriteLine("Tc Kimlik Alanı Boş Bırakılmamalı, tekrar giriniz : ");
+    idStr = Console.ReadLine();
+}
 
-Console.WriteLine(test1.ToString());
+Console.WriteLine("Ad Giriniz : ");
+var firstName = Console.ReadLine();
+while (firstName.Length == 0)
+{
+    Console.WriteLine("Ad Alanı Boş Bırakılmamalı, tekrar giriniz : ");
+    firstName = Console.ReadLine();
+}
 
+Console.WriteLine("Soyad Giriniz : ");
+var lastName = Console.ReadLine();
+while (lastName.Length == 0)
+{
+    Console.WriteLine("Soyad Alanı Boş Bırakılmamalı, tekrar giriniz : ");
+    lastName = Console.ReadLine();
+}
 
+Console.WriteLine("Doğum Yılı Giriniz : ");
+var birthday = Console.ReadLine();
+while (birthday.Length == 0)
+{
+    Console.WriteLine("Doğum Yılı Alanı Boş Bırakılmamalı, tekrar giriniz : ");
+    birthday = Console.ReadLine();
+}
+
+person.Id = long.Parse(idStr);
+person.FirstName = firstName;
+person.LastName = lastName;
+person.Birthday = int.Parse(birthday);
+
+var infomationCheckResult = clientService.CheckPerson(person);
+
+Console.WriteLine(infomationCheckResult);

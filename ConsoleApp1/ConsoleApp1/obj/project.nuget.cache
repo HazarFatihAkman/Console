@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AyIETbMXlxa4qfVN+TA5ZKQzZaNQQEnzTd4sv3r/wNHlkhcipFyxWXyKBSV3nA+kWqBFAHTrasQKr1vdrA3AJQ==",
+  "dgSpecHash": "fyw2WqIS0UszF2Y6QEDZ6KqaFNncYkhFjOJ+/y0t/moUUVJRREydO89PsPZVHNWdZvtGtl/n2Kz2A8s2D/Sojg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nn\\Desktop\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "projectFilePath": "C:\\Users\\Nn\\Desktop\\workspace\\Console\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nn\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Nn\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
